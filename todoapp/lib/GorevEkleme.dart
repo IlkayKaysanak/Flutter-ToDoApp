@@ -24,11 +24,12 @@ class _GorevEklemeState extends State<GorevEkleme> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(115, 43, 41, 41),
+        backgroundColor: Color.fromRGBO(234, 246, 246, 1.0),
         appBar: AppBar(
+          backgroundColor: Color.fromRGBO(102, 191, 191, 1.0),
           title: Text(
             "Görev Ekle",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
           ),
         ),
         body: SingleChildScrollView(
@@ -46,8 +47,9 @@ class _GorevEklemeState extends State<GorevEkleme> {
                       controller: tfController1,
                       decoration: InputDecoration(
                           hintText: "Görevi Giriniz",
+                          hintStyle: TextStyle(color: Colors.white),
                           filled: true,
-                          fillColor: Colors.red,
+                          fillColor: Color.fromRGBO(255, 0, 99, 1.0),
                           border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8.0)))),
@@ -59,10 +61,12 @@ class _GorevEklemeState extends State<GorevEkleme> {
                   child: TextField(
                     style: TextStyle(color: Colors.white),
                     controller: tfController2,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                         hintText: "Bitiş Tarihini Giriniz",
+                        hintStyle: TextStyle(color: Colors.white),
                         filled: true,
-                        fillColor: Colors.red,
+                        fillColor: Color.fromRGBO(255, 0, 99, 1.0),
                         border: OutlineInputBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(8.0)))),
@@ -82,6 +86,7 @@ class _GorevEklemeState extends State<GorevEkleme> {
           tooltip: 'Kaydet',
           label: Text("Kaydet"),
           icon: Icon(Icons.save),
+          backgroundColor: Color.fromRGBO(102, 191, 191, 1.0),
 
           // This trailing comma makes auto-formatting nicer for build methods.
         ));
