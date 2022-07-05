@@ -80,6 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Spacer(),
                                 IconButton(
                                     onPressed: () {
+                                      setState(() {
+                                        Yapilacaklardao()
+                                            .gorevSil(gorev.yapilacaklar_id);
+                                      });
+
                                       print("sildi");
                                     },
                                     icon: Icon(Icons.delete)),

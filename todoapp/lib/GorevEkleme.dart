@@ -60,7 +60,7 @@ class _GorevEklemeState extends State<GorevEkleme> {
                     style: TextStyle(color: Colors.white),
                     controller: tfController2,
                     decoration: InputDecoration(
-                        hintText: "Tarihi Giriniz",
+                        hintText: "Bitiş Tarihini Giriniz",
                         filled: true,
                         fillColor: Colors.red,
                         border: OutlineInputBorder(
